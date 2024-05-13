@@ -1,0 +1,9 @@
+/Users/pushpalpatil/Desktop/M.S./Spring24/CMPE 275/socket-3code/cpp-src/basic/CMakeFiles/basic_socket.dir
+/Users/pushpalpatil/Desktop/M.S./Spring24/CMPE 275/socket-3code/cpp-src/basic/CMakeFiles/serverApp.dir
+/Users/pushpalpatil/Desktop/M.S./Spring24/CMPE 275/socket-3code/cpp-src/basic/CMakeFiles/clientApp.dir
+/Users/pushpalpatil/Desktop/M.S./Spring24/CMPE 275/socket-3code/cpp-src/basic/CMakeFiles/edit_cache.dir
+/Users/pushpalpatil/Desktop/M.S./Spring24/CMPE 275/socket-3code/cpp-src/basic/CMakeFiles/rebuild_cache.dir
+/Users/pushpalpatil/Desktop/M.S./Spring24/CMPE 275/socket-3code/cpp-src/basic/CMakeFiles/list_install_components.dir
+/Users/pushpalpatil/Desktop/M.S./Spring24/CMPE 275/socket-3code/cpp-src/basic/CMakeFiles/install.dir
+/Users/pushpalpatil/Desktop/M.S./Spring24/CMPE 275/socket-3code/cpp-src/basic/CMakeFiles/install/local.dir
+/Users/pushpalpatil/Desktop/M.S./Spring24/CMPE 275/socket-3code/cpp-src/basic/CMakeFiles/install/strip.dir
