@@ -1,0 +1,55 @@
+# Detailed Chat Application Documentation
+
+This repository hosts a Python-based client-server chat application. The application uses TCP/IP sockets for network communication and supports basic chat functionalities including message sending, group management, and session handling.
+
+## Components
+
+### 1. Builder.py (Message Encoder/Decoder)
+
+`BasicBuilder` class is responsible for encoding and decoding the messages sent between the client and the server.
+
+- **Methods**:
+  - `encode(name, group, msg)`: Takes the sender's name, group, and message text, and returns a formatted string that includes a message header with the payload length followed by the payload itself.
+  - `decode(raw)`: Parses the raw message string to extract the sender's name, group, and message text. It validates the message format and raises a `ValueError` if the format is incorrect.
+
+### 2. Client.py (Client Functionality)
+
+The `BasicClient` class facilitates client operations such as connecting to the server, sending messages, and handling the client state.
+
+- **Core Features**:
+  - **Connection Management**: Manages the TCP connection to the server, handling both connection setup and teardown.
+  - **Message Sending**: Encodes messages using `BasicBuilder` and sends them over the socket.
+  - **Group Management**: Allows the client to join different groups within the chat system.
+
+- **Methods**:
+  - `connect()`: Establishes a connection to the server using the provided IP address and port.
+  - `send_msg(text)`: Sends a text message to the server after encoding it.
+  - `join(group)`: Joins a specified group on the server.
+
+### 3. Server.py (Server Functionality)
+
+`BasicServer` class manages incoming client connections and processes incoming messages in a multi-threaded environment.
+
+- **Core Features**:
+  - **Listening**: The server listens on a specified port for incoming client connections.
+  - **Session Handling**: Each client connection is managed by a separate thread to handle messages independently.
+  - **Message Processing**: Decodes and processes messages received from clients.
+
+- **Methods**:
+  - `run()`: Starts the server and listens for incoming connections.
+  - `_run_server()`: Handles the actual incoming connections and initializes session handlers for each connection.
+  - `stop()`: Shuts down the server and cleans up resources.
+
+### Session Handling (SessionHandler Class)
+
+Handles individual client sessions.
+
+- **Methods**:
+  - `process(raw)`: Processes messages from the connected client.
+  - `run()`: Continuously receives messages from the client and processes them.
+
+## Setup Instructions
+
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository-url>
