@@ -150,6 +150,14 @@ Conclusion
 
 This project demonstrates a straightforward implementation of a networked communication system using Python sockets. The architecture allows for scalable and flexible communication between multiple clients and a server, with the ability to handle different types of messages and commands effectively.
 
+**Encoding**: Constructs a payload string by combining group, name, and msg separated by commas.
+Prepares a header that includes the length of the payload, padded to four digits, followed by the payload itself. The length helps the receiver know how many characters to expect, which is crucial for correctly parsing messages that may vary in length.
+
+**Decoding** : Splits the raw input string based on commas into parts. It expects four parts due to the structure defined by encode: [message length, group, name, msg].
+Checks if the split results in exactly four parts. If not, it raises a ValueError indicating an issue with the message format, which is crucial for detecting transmission errors or tampering.
+
+**session handler** : This implementation allows for individual sessions with clients to be handled in separate threads, enabling concurrent processing of client requests in a networked application. Each session can receive, process, and handle messages independently of others.
+
 
 
 
