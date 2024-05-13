@@ -1,3 +1,45 @@
+# Socket - Tri-Code Interoperability
+
+Welcome to the "Socket - Tri-Code Interoperability" project, an educational exploration into the foundation of distributed computing using sockets, demonstrating process communication across three programming languages: Java, C++, and Python. This project allows students to explore network communication, cross-language interoperability, and the practical implementation of socket programming in various programming environments.
+
+## Project Overview
+
+The main goal of this project is to establish a communication matrix where clients and servers written in Java, Python, and C++ can interoperate. This matrix demonstrates the possibilities and challenges of cross-language communication in network programming.
+
+### Interoperability Matrix
+
+The matrix below outlines the current status of client-server communication pairs, denoting completed examples with 'Y'. The objective is to fill in the gaps and ensure robust communication between each pair.
+
+| Clt/Svr  | Java | Python3 | C/C++ |
+| -------- | :--: | :-----: | :---: |
+| Java     | Y    |         |       |
+| Python3  |      | Y       | Y     |
+| C/C++    |      | Y       | Y     |
+
+### Project Structure
+
+This project contains three subdirectories, each corresponding to a different programming language implementation:
+
+- `cpp-src`: Contains the C++ implementation.
+- `java-src`: Contains the Java implementation.
+- `python-src`: Contains the Python implementation.
+
+Each subdirectory has its own `README.md` providing specific setup and running instructions.
+
+## Getting Started
+
+### Prerequisites
+
+Ensure you have the following tools and languages installed on your system:
+
+- C/C++ Compiler (gcc/g++, clang)
+- Java JDK 11 or newer
+- Python 3
+- cmake
+- Linters for C/C++ and Python
+- Tools like Valgrind and static analyzers
+- Text editor or IDE (VSCode, IntelliJ, Eclipse, etc.)
+
 # Detailed Chat Application Documentation
 
 This repository hosts a Python-based client-server chat application. The application uses TCP/IP sockets for network communication and supports basic chat functionalities including message sending, group management, and session handling.
